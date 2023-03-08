@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:masterclass_app/app/splash/presentation/splash_page.dart';
+import 'package:masterclass_app/src/features/activities/presentation/activities_page.dart';
+import 'package:masterclass_app/src/features/splash/presentation/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -50,12 +51,12 @@ class AppWidget extends StatelessWidget {
               900: Color(0xFF012E77),
             },
           ),
-          cardColor: Color(0xFF055AA3),
+          cardColor: const Color(0xFF055AA3),
           errorColor: const Color(0xFFDD4B4B),
           backgroundColor: const Color(0xFF1B232A),
         ),
       ),
-      home: const SplashPage(),
+      home: const ActivitiesPage(),
     );
   }
 }
